@@ -176,6 +176,7 @@ use Pimple\Container;
  * @property \Kanboard\Validator\LinkValidator                       $linkValidator
  * @property \Kanboard\Validator\PasswordResetValidator              $passwordResetValidator
  * @property \Kanboard\Validator\ProjectValidator                    $projectValidator
+ * @property \Kanboard\Validator\ProjectMemberValidator              $projectMemberValidator
  * @property \Kanboard\Validator\ProjectRoleValidator                $projectRoleValidator
  * @property \Kanboard\Validator\SubtaskValidator                    $subtaskValidator
  * @property \Kanboard\Validator\SwimlaneValidator                   $swimlaneValidator

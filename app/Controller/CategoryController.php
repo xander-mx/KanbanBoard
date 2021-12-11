@@ -148,14 +148,14 @@ class CategoryController extends BaseController
     {
         $this->checkCSRFParam();
         $project = $this->getProject();
-        $category = $this->getCategory($project);
+        $member = $this->getCategory($project);
 
-        if ($this->categoryModel->remove($category['id'])) {
-            $this->flash->success(t('Category removed successfully.'));
+        if ($this->projectMemberModel->remove($member['id'])) {
+            $this->flash->success(t('Member removed successfully.'));
         } else {
-            $this->flash->failure(t('Unable to remove this category.'));
+            $this->flash->failure(t('Unable to remove this member.'));
         }
 
-        $this->response->redirect($this->helper->url->to('CategoryController', 'index', array('project_id' => $project['id'])));
+        $this->response->redirect($this->helper->url->to('ProjectMembersController', 'index', array('project_id' => $project['id'])));
     }
 }

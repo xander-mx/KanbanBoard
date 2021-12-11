@@ -115,6 +115,7 @@ class ClassProvider implements ServiceProviderInterface
             'LinkValidator',
             'PasswordResetValidator',
             'ProjectValidator',
+            'ProjectMemberValidator',
             'ProjectRoleValidator',
             'SubtaskValidator',
             'SwimlaneValidator',
